@@ -1,0 +1,63 @@
+Website
+
+<div class="header">
+    <div class="header-contents">
+        <h2>Order your favourite food here</h2>
+        <p>
+            Choose from a diverse menu featuring a delectable array of dishes 
+            crafted with the finest ingredients and culinary expertise. Our 
+            mission is to satisfy your cravings and elevate your dining 
+            experience, one delicious meal at a time.
+        </p>
+        <button>View Menu</button>
+    </div>
+</div>
+.header {
+    height: 34vw;
+    margin: 30px auto;
+    background: url('your-food-image.png') no-repeat; /* यहाँ अपनी फोटो का लिंक डालें */
+    background-size: contain;
+    position: relative;
+}
+
+.header-contents {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1.5vw;
+    max-width: 50%;
+    bottom: 10%;
+    left: 6vw;
+    /* नीचे से ऊपर आने वाला एनीमेशन */
+    animation: fadeIn 3s; 
+}
+
+.header-contents h2 {
+    font-weight: 500;
+    color: white;
+    font-size: max(4.5vw, 22px);
+}
+
+.header-contents p {
+    color: white;
+    font-size: 1vw;
+}
+
+.header-contents button {
+    border: none;
+    color: #747474;
+    font-weight: 500;
+    padding: 1vw 2.3vw;
+    background-color: white;
+    font-size: max(1vw, 13px);
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+/* एनीमेशन की सेटिंग */
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(30px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
